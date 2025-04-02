@@ -1,0 +1,58 @@
+.button {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 10px;
+  white-space: nowrap;
+  font-family: "Times New Roman", sans-serif;
+  &:disabled{
+    background-color: #F2F3F5;
+    border-color: #F2F3F5;
+    color: #DEDEDE;
+  }
+}
+
+/* size */
+.lg {
+  height: 36px;
+  padding: 10px 15px;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 16px;
+}
+
+.md {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px 20px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 20px;
+  gap: 9px;
+  @media screen and (width: 375px) {
+    font-size: 15px;
+    width: 120px;
+  }
+}
+
+///* colors */
+.primary {
+  color: white;
+  background: black;
+
+  &:hover {
+    transition: all 0.2s ease-in-out;
+    background: black;
+    color: white;
+  }
+  &:active{
+    background-color: black;
+    color: white;
+  }
+  &:focus{
+    background-color: black;
+    color: white;
+  }
+}
